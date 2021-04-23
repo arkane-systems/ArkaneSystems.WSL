@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>ArkaneSystems.WindowsSubsystemForLinux</RootNamespace>
+    <Version>0.1</Version>
+    <Nullable>enable</Nullable>
+    <Authors>Alistair J. R. Young</Authors>
+    <Company>Arkane Systems</Company>
+    <Description>A library of helper functions for writing Linux utilities intended to execute under WSL.</Description>
+    <Copyright>Copyright ⓒ 2020 Arkane Systems</Copyright>
+    <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/arkane-systems/ArkaneSystems.WSL</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/arkane-systems/ArkaneSystems.WSL</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>linux wsl</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2021.1.0" />
+    <PackageReference Include="Tmds.LibC" Version="0.5.0" />
+  </ItemGroup>
+
+</Project>
