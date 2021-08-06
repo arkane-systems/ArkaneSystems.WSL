@@ -4,7 +4,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>ArkaneSystems.WindowsSubsystemForLinux</RootNamespace>
-    <Version>0.1</Version>
+    <Version>0.2</Version>
     <Nullable>enable</Nullable>
     <Authors>Alistair J. R. Young</Authors>
     <Company>Arkane Systems</Company>
@@ -27,7 +27,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="JetBrains.Annotations" Version="2021.1.0" />
+    <PackageReference Include="JetBrains.Annotations" Version="2021.2.0" />
     <PackageReference Include="Tmds.LibC" Version="0.5.0" />
   </ItemGroup>
 
